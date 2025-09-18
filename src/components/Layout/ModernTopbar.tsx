@@ -25,9 +25,12 @@ const ModernTopbar: React.FC<ModernTopbarProps> = ({ setSidebarOpen }) => {
         <div className="flex items-center space-x-4">
           <button
             onClick={() => setSidebarOpen(true)}
-            className="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="lg:hidden p-2 rounded-lg bg-gradient-to-r from-[#6D28D9] to-[#3B82F6] text-white hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            aria-expanded={false}
+            aria-controls="sidebar"
+            aria-label="Toggle navigation"
           >
-            <Bars3Icon className="w-6 h-6 text-gray-600" />
+            <Bars3Icon className="w-6 h-6 text-white" />
           </button>
 
           {/* Logo for mobile */}
